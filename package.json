@@ -1,0 +1,26 @@
+{
+  "name": "interactive-rating-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasmin-Almeida-DEV/Interactive-rating-component.git"
+  },
+  "keywords": [
+    "rating"
+  ],
+  "author": "Yasmin Almeida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yasmin-Almeida-DEV/Interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/Yasmin-Almeida-DEV/Interactive-rating-component#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}

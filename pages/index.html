@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <title>Interative rating component</title>
+</head>
+<body>
+    <section class="modal">
+        <div class="modal__content">
+            <!-- default-state-->
+            <img src="/images/icon-star.svg" alt="star icon" class="default-state">
+            <h2 class="default-state">Como foi seu atendimeto?</h2>
+            <p class="default-state">Avalie como foi nosso atendimento. Todo feedback é bem vindo e nos ajuda a melhorar.</p>
+            <ul class="rating default-state">
+                <li class="one">1</li>
+                <li class="two">2</li>
+                <li class="three">3</li>
+                <li class="four">4</li>
+                <li class="five">5</li>
+            </ul>
+            <button class="submit default-state">SUBMIT</button>
+    
+            <!-- thanks-state -->
+            <img src="/images/illustration-thank-you.svg" alt="thanks for hating" class="thanks-state">
+            <p class="selected-number thanks-state"></p>
+            <h2 class="thanks-state">Thank you!</h2>
+            <p class="thanks-state">Obrigado(a) pela sua avaliação! Caso precise de ajuda entre em contato conosco.</p>
+        </div>
+    </section>
+</body>
+</html>
