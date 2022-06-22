@@ -1,5 +1,5 @@
-.thanks-state {
-  display: none;
+.default-state {
+  display: none !important;
 }
 
 .modal {
@@ -24,16 +24,34 @@
   background: var(--Medium-Grey-transp);
   border-radius: 30px;
 }
+.modal__content img.thanks-state {
+  justify-self: center;
+}
 .modal__content h2 {
   color: white;
   font-size: 23px;
   font-weight: 700;
+}
+.modal__content h2.thanks-state {
+  text-align: center;
+}
+.modal__content .selected-number {
+  text-align: center;
+  color: var(--Orange);
+  padding: 5px 10px;
+  background-color: var(--Medium-Grey-transp);
+  width: 70%;
+  justify-self: center;
+  border-radius: 20px;
 }
 .modal__content p {
   color: var(--Light-Grey);
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
+}
+.modal__content p.thanks-state {
+  text-align: center;
 }
 .modal__content .rating {
   display: flex;
@@ -49,6 +67,12 @@
   align-items: center;
   color: var(--Light-Grey);
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.modal__content .rating li:hover {
+  background-color: var(--Orange);
+  color: var(--Dark-Blue);
 }
 .modal__content .submit {
   background: var(--Orange);
@@ -60,6 +84,10 @@
   letter-spacing: 10px;
   font-size: 13px;
   font-family: var(--font-1);
+  transition: 0.3s ease-in-out;
+}
+.modal__content .submit:hover {
+  background-color: #ff9041;
 }
 
 /*# sourceMappingURL=index.css.map */

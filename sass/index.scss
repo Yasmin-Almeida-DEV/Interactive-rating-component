@@ -1,5 +1,9 @@
-.thanks-state{
-    display: none;
+// .thanks-state{
+//     display: none;
+// }
+
+.default-state{
+    display: none !important;
 }
 
 .modal{
@@ -18,12 +22,16 @@
         font-family: var(--font-1);
         display: grid;
         grid-gap: 25px;
-    
+        
         img{
             &.default-state{
                 padding: 15px;
                 background: var(--Medium-Grey-transp);
                 border-radius: 30px;
+            }
+
+            &.thanks-state {
+                justify-self: center;
             }
         }
     
@@ -31,13 +39,31 @@
             color: white;
             font-size: 23px;
             font-weight: 700;
+
+            &.thanks-state {
+                text-align: center;
+            }
         }
     
+        .selected-number {
+            text-align: center;
+            color: var(--Orange);
+            padding: 5px 10px;
+            background-color: var(--Medium-Grey-transp);
+            width: 70%;
+            justify-self: center;
+            border-radius: 20px;
+        }
+
         p{
             color: var(--Light-Grey);
             font-size: 15px;
             font-weight: 400;
             line-height: 20px;
+
+            &.thanks-state {
+                text-align: center;
+            }
         }
     
         .rating{
@@ -53,6 +79,13 @@
                 align-items: center;
                 color: var(--Light-Grey);
                 font-weight: 700;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                &:hover{
+                    background-color: var(--Orange);
+                    color: var(--Dark-Blue);
+                }
             }
         }
 
@@ -66,6 +99,11 @@
             letter-spacing: 10px;
             font-size: 13px;
             font-family: var(--font-1);
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                background-color: #ff9041;
+            }
         }
     }
 }
